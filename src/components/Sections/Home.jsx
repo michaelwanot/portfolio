@@ -1,5 +1,3 @@
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { BaseSection } from './BaseSection';
 
@@ -17,7 +15,7 @@ export const Home = () => {
             <p className='my-4 text-sm font-thin'>Hai un progetto da realizzare?</p>
             <div className='lg:mx-0 flex gap-8'>
               <a href='#contacts' className='button-primary'>Hire me!</a>
-              <a download href="CV_ENG.pdf" className='button-secondary'>Download CV <span><FontAwesomeIcon icon={faDownload} /></span></a>
+              <a download href="CV_ENG.pdf" className='button-secondary'>Download CV <span className='fa fa-download'></span></a>
             </div>
         </div>
         <div className='mt-12'>
