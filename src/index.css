@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .nav-item {
+    @apply text-tertiary lg:hover:bg-primary focus:bg-primary p-2;
+  }
+
+  .mobile-menu {
+    @apply w-full absolute bg-white shadow-xl;
+    transition: all .5s ease-in-out;
+  }
+
+  .mobile-menu-button {
+    @apply z-20 lg:hidden bg-primary flex items-center p-4 h-12 w-12;
+  }
+  
+  .form-input {
+    @apply flex flex-col my-4 text-tertiary font-thin;
+  }
+
+  .icon-wrapper {
+    @apply bg-black flex items-center lg:w-16 lg:h-16 h-12 w-12;
+  }
+
+  .linked-icon {
+    @apply text-white lg:text-5xl text-3xl mx-auto;
+  }
+
+  .skill-box {
+    @apply text-secondary bg-tertiary lg:w-72 p-4  my-4 text-[14px]; 
+    transition: all .2s ease-in-out;
+  }
+
+  .logo {
+    @apply uppercase bg-primary p-2 lg:w-24 lg:h-24 text-4xl leading-[54px];
+  }
+
+  .button-primary {
+    @apply bg-primary flex text-white items-center gap-2 py-2 px-3;
+  }
+
+  .button-secondary {
+    @apply border-2 border-primary flex items-center gap-2 py-2 px-3 text-primary hover:bg-primary hover:text-white;
+  }
+
+  .quote-box {
+    @apply lg:block border-primary border-4 text-white font-thin p-4 w-2/3 ml-auto;
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary: yellow;
+  --secondary: rgb(212, 212, 212);
+  --tertiary: rgb(133, 133, 133)
 }
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+  
+section#home {
+  background: linear-gradient(90deg, white 30%, var(--secondary) 30%);
+}
+
+section {
+  background: linear-gradient(180deg,rgb(0,0,0,0) 30%, white 30%, white 80%,  var(--secondary) 80%), black;
+}
+
+section#contacts {
+  background: linear-gradient(270deg, white 60%, var(--secondary) 60%);
+}
+
+input {
+  @apply h-8
+}
+
+header {
+  @apply w-full h-16 fixed z-10 pt-2 font-thin
+}
+
+
