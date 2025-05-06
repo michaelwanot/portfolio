@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
 
 function App() {
@@ -9,7 +7,7 @@ function App() {
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
       {/* Navbar */}
       <nav className="flex justify-between items-center p-6 bg-white shadow-md">
-        <div className="text-xl font-bold">Antonio Rossi</div>
+        <div className="text-xl font-bold">Michael Wanot</div>
         <ul className="flex space-x-6 text-sm">
           <li><a href="#about" className="hover:text-blue-700">About</a></li>
           <li><a href="#portfolio" className="hover:text-blue-700">Portfolio</a></li>
