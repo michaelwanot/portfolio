@@ -17,7 +17,7 @@ function App() {
 
       {/* Hero Section */}
       <header className="flex flex-col items-center text-center py-20 px-4 bg-white">
-        <h1 className="text-4xl font-bold mb-2">Antonio Rossi</h1>
+        <h1 className="text-4xl font-bold mb-2">Michael Wanot</h1>
         <p className="text-blue-700 text-lg font-medium">Frontend Developer Consultant</p>
         <div className="w-24 h-24 mt-6 rounded-full bg-gray-200 flex items-center justify-center">
           <span className="text-4xl">👨‍💻</span>
